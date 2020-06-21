@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(#f77f00, #6f170b);
+  background: radial-gradient(#E03C00, #6f170b);
 }
 
 .page-title {
@@ -119,6 +119,7 @@ body {
     background-color: rgba(0, 0, 0, 0);
     font-size: 0;
   }
+
   to {
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 10em;
@@ -126,6 +127,7 @@ body {
 }
 
 @keyframes dance {
+
   0%,
   100% {
     transform: rotate(0);
@@ -206,12 +208,111 @@ body {
 }
 
 @media (max-width: 600px) {
+
+  body {
+    margin: 0;
+    background: radial-gradient(#F47052, #6f170b);
+    /*color: #B53203,
+      #8D2702,
+      #E03C00,
+      #FF7847,
+      #CC5500,
+      #FF7C1F,
+      #790103,
+      #B80000,
+      #D3320D,
+      #F47052, ;*/
+  }
+
+  .card-face:hover .cob-web {
+    width: 27px;
+    height: 27px;
+  }
+
+  .spider {
+    height: 55px;
+    width: 50px;
+    align-self: flex-start;
+    transform: translateY(5px);
+    transition: transform 100ms ease-in-out;
+  }
+
+  .game-info-container {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .game-info {
+    font-family: Lunacy, serif;
+    color: #fc6136;
+    font-size: 2em;
+  }
+
+  .page-title {
+    color: #D3320D;
+    margin: 50px;
+    font-family: Creepy, serif;
+    font-weight: normal;
+    text-align: center;
+    font-size: 3em;
+  }
+
+  .card-value {
+    transition: transform 100ms ease-in-out;
+    transform: scale(0.4);
+  }
+
+  .cob-web {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    transition: width 100ms ease-in-out, height 100ms ease-in-out;
+  }
+
+  .card {
+    position: relative;
+    height: 90px;
+    width: 65px;
+  }
+
   .game-container {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(4, auto);
   }
 
   .game-info-container {
     flex-direction: column;
     align-items: center;
+  }
+
+  .overlay-text {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    color: #D3320D;
+    font-family: Creepy, serif;
+    text-align: center;
+  }
+
+  .overlay-text-small {
+    font-size: 0.3em;
+  }
+
+  @keyframes overlay-grow {
+    from {
+      background-color: rgba(0, 0, 0, 0);
+      font-size: 0;
+    }
+
+    to {
+      background-color: rgba(0, 0, 0, 0.8);
+      font-size: 5em;
+    }
   }
 }
