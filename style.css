@@ -21,7 +21,7 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(#E03C00, #6f170b);
+  background: radial-gradient(#e03c00, #6f170b);
 }
 
 .page-title {
@@ -127,7 +127,6 @@ body {
 }
 
 @keyframes dance {
-
   0%,
   100% {
     transform: rotate(0);
@@ -208,20 +207,11 @@ body {
 }
 
 @media (max-width: 600px) {
-
   body {
     margin: 0;
-    background: radial-gradient(#F47052, #6f170b);
-    /*color: #B53203,
-      #8D2702,
-      #E03C00,
-      #FF7847,
-      #CC5500,
-      #FF7C1F,
-      #790103,
-      #B80000,
-      #D3320D,
-      #F47052, ;*/
+    background: radial-gradient(#fe4e00, #6f170b);
+    /*color: #b53203, #8d2702, #e03c00, #ff7847, #cc5500, #ff7c1f, #790103,
+      #b80000, #d3320d, #f47052;*/
   }
 
   .card-face:hover .cob-web {
@@ -250,7 +240,7 @@ body {
   }
 
   .page-title {
-    color: #D3320D;
+    color: #d3320d;
     margin: 50px;
     font-family: Creepy, serif;
     font-weight: normal;
@@ -295,7 +285,7 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    color: #D3320D;
+    color: #d3320d;
     font-family: Creepy, serif;
     text-align: center;
   }
