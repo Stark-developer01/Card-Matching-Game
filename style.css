@@ -209,7 +209,7 @@ body {
 @media (max-width: 600px) {
   body {
     margin: 0;
-    background: radial-gradient(#fe4e00, #6f170b);
+    background: radial-gradient(#9d5900, #3d2200);
     /*color: #b53203, #8d2702, #e03c00, #ff7847, #cc5500, #ff7c1f, #790103,
       #b80000, #d3320d, #f47052;*/
   }
@@ -235,12 +235,12 @@ body {
 
   .game-info {
     font-family: Lunacy, serif;
-    color: #fc6136;
+    color: #ffbb89;
     font-size: 2em;
   }
 
   .page-title {
-    color: #d3320d;
+    color: #ff6d00;
     margin: 50px;
     font-family: Creepy, serif;
     font-weight: normal;
